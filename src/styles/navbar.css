@@ -12,20 +12,25 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 10px 20px;
   margin: 20px;
   background: linear-gradient(145deg, #1a3b52, #162e40);
   border-radius: 10px;
+  padding: 15px;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4), -5px -5px 15px rgba(255, 255, 255, 0.1);
-  padding: 20px;
   transition: all 0.3s ease;
 }
 
-/* Enhance the navbar name with text-shadow for depth */
 .navbar-name {
   font-size: 1.8em;
   font-weight: bold;
   color: #f0f0f0;
   text-shadow: 2px 2px 4px #000;
+}
+
+.navbar-links {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .navbar-links a {
@@ -42,7 +47,6 @@
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
   font-weight: 600;
   letter-spacing: 1px;
-  display: inline-block;
 }
 
 .navbar-links a:hover {
@@ -52,35 +56,46 @@
   transform: translateY(-3px);
 }
 
-/* Active state for the link buttons */
 .navbar-links a:active {
   background-color: #e0e0e0;
   box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2);
   transform: translateY(2px);
 }
 
-/* Responsive design for the menu icon */
 .menu-icon {
-  display: none; /* Hide the menu icon for desktop view */
+  display: none;
+  color: #fff;
+  font-size: 2em;
+  margin-right: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.menu-icon svg {
+  fill: #fff;
+  width: 24px;
+  height: 24px;
 }
 
 .navbar-bottom {
-  margin-top: 20px;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
+  padding: 20px;
+  margin-top: 20px;
 }
 
 .navbar-info {
   flex: 1;
-  padding-left: 30px;
   text-align: left;
-  margin: 0 0 10px;
+  margin: 0 20px;
 }
 
 .navbar-info h1 {
-  font-size: 2.0rem;
+  font-size: 2rem;
   line-height: 1.2;
   font-weight: bold;
   color: transparent;
@@ -88,7 +103,6 @@
   background: linear-gradient(to right, #ffffff, #737f98);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  display: inline-block;
   transition: all 0.3s ease-in-out;
 }
 
@@ -99,84 +113,86 @@
 
 .job-title-animation {
   overflow: hidden;
-  border-right: 2px solid orange; /* Change border color as needed */
+  border-right: 2px solid orange;
   white-space: nowrap;
   animation: typing 1s steps(40, end);
 }
 
 .navbar-info b {
   font-family: 'Times New Roman', Times, serif;
-  font-size: 3rem; /* Equivalent to 400% for better scalability */
-  line-height: 1.5; /* Adjust line height for better readability */
-  white-space: nowrap; /* Prevent job titles from wrapping */
-  overflow: hidden; /* Hide overflow for long job titles */
-  display: block; /* Change from inline-block to block */
-  margin-top: 0; /* Remove default top margin */
-  margin-bottom: 1rem; /* Add some space between the title and content */
-  font-weight: bold; /* Ensure boldness for emphasis */
-  background-image: linear-gradient(to right, #ff8a00, #e52e71); /* Vibrant orange color for contrast */
-  -webkit-background-clip: text; /* Apply gradient to text */
-  -webkit-text-fill-color: transparent; /* Hide original text color */
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1); /* Soft text shadow for depth */
-  transition: transform 0.3s ease-in-out; /* Smooth transition for hover effect */
+  font-size: 3rem;
+  line-height: 1.5;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  background-image: linear-gradient(to right, #ff8a00, #e52e71);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
 }
 
 .navbar-info p {
   margin-bottom: 30px;
   line-height: 1.5;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Classy and modern font */
-  color: #ffffff; /* Subtle, professional font color */
-  font-size: 16px; /* Optimal font size for readability */
-  text-align: justify; /* Ensures the text is evenly distributed */
-  max-width: 600px; /* Optimal line length for reading comfort */
-  padding: 10px; /* Adds space inside the borders */
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #ffffff;
+  font-size: 16px;
+  text-align: justify;
+  max-width: 600px;
+  padding: 10px;
   border-left: 3px solid #009688;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Soft shadow for a subtle 3D effect */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-info button {
-  margin-bottom: 0;
-  height: 110%;
   padding: 10px 25px;
-  background-color: #3498db; /* Stylish blue background */
-  color: rgb(0, 0, 0); /* Black text color */
+  background-color: #3498db;
+  color: #000;
   border: none;
-  border-radius: 5px; /* Rounded corners */
+  border-radius: 5px;
   font-size: 16px;
   font-weight: bold;
   text-transform: uppercase;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  transition: all 0.3s ease; /* Smooth transition for hover effects */
-  cursor: pointer; /* Make the button clickable */
-  animation: highlight 2s infinite alternate; /* Apply the animation */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  animation: highlight 2s infinite alternate;
 }
 
 .navbar-info button:hover {
-  background-color: #2980b9; /* Slightly darker shade on hover */
-  transform: translateY(-2px); /* Slight raise effect */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+  background-color: #2980b9;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 .navbar-info button:active {
-  transform: translateY(1px); /* Depress effect when active */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Shallower shadow when pressed */
+  transform: translateY(1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 @keyframes highlight {
-  0% { background-color: #3498db; } /* Blue */
-  50% { background-color: #f1c40f; } /* Yellow */
-  100% { background-color: #27ae60; } /* Green */
+  0% { background-color: #3498db; }
+  50% { background-color: #f1c40f; }
+  100% { background-color: #27ae60; }
 }
 
 .navbar-image {
+  /* border: 2px solid #fff;
+  border-radius: 50%; */
   border: 2px solid rgb(255, 255, 255);
-  border-radius: 700px; /* border style, width, and color */
-  flex: 0.72;
+  border-radius: 200px;
   margin-right: 20px;
   text-align: center;
 }
 
 .navbar-image img {
+  /* max-width: 100%;
+  height: auto;
+  border-radius: 50%; */
   max-width: 80%;
   height: 80%;
 }
@@ -192,109 +208,104 @@
   font-size: 40px;
   margin: 0 20px;
   transition: transform 0.3s ease, color 0.3s ease;
-  text-decoration: none; /* Removes underline from links */
+  text-decoration: none;
 }
 
 .navbar-socials a:hover {
   color: #ffffff;
-  transform: translateY(-5px); /* Slight raise effect on hover */
-  text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Soft shadow for depth */
+  transform: translateY(-5px);
+  text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
 }
 
-/* Optional: Add a specific class for each social media icon for custom colors */
 .navbar-socials .icon-facebook:hover {
-  color: #3b5998; /* Facebook Blue */
+  color: #3b5998;
 }
 
 .navbar-socials .icon-twitter:hover {
-  color: #1da1f2; /* Twitter Blue */
+  color: #1da1f2;
 }
 
 .navbar-socials .icon-instagram:hover {
-  color: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); /* Instagram Gradient */
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 @media (max-width: 768px) {
-  .menu-icon {
-    display: block;
-    color: #fff;
-    font-size: 2em;
-    margin-right: 20px;
+  .navbar-top {
+    /* flex-direction: column; */
+    justify-content: space-between;
+    /* align-items: flex-start; */
   }
 
   .navbar-links {
-    display: none; /* Hide the links on mobile */
-  }
-
-  .navbar-top {
-    justify-content: space-between;
+    display: none;
   }
 
   .menu-icon {
     display: block;
-    background: none;
-    border: none;
-    cursor: pointer;
-    margin-right: 10px;
-  }
-
-  .menu-icon svg {
-    fill: #fff;
-    width: 24px;
-    height: 24px;
   }
 
   .navbar-links-mobile {
     display: flex;
     flex-direction: column;
-    margin-top: 20px;
-  }
-
-  .navbar-info,
-  .navbar-image {
-    flex: 1;
+    align-items: center;
+    margin-top: 10px;
   }
 
   .navbar-bottom {
     flex-direction: column;
-    text-align: center;
+    align-items: center;
   }
 
-  .navbar-info b {
-    font-size: 200%;
-    line-height: 40px;
-    white-space: nowrap; /* Keep job titles from wrapping */
-    overflow: hidden; /* Hide overflow for long job titles */
-    animation: typing 2s steps(40, end) infinite, blink-caret .75s step-end infinite;
+  .navbar-info {
+    /* text-align: center; */
+    margin: 10px 0;
   }
 
-  .job-title-animation {
-    white-space: normal;
-    overflow: visible;
-    text-overflow: ellipsis;
+  .navbar-info h1, .navbar-info b {
+    font-size: 1.5rem;
   }
 
-  @keyframes typing {
-    from { width: 0; }
-    to { width: 100%; }
-  }
-
-  .navbar-info b {
-    font-size: 200%;
-    line-height: 40px;
-    animation: typing 2s steps(40, end) infinite, blink-caret .75s step-end infinite;
+  .navbar-image {
+    margin: 10px 0;
   }
 }
 
-.personal-button {
-  background-color: #ccdbec; /* Blue color, you can change it */
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  margin: 10px;
-  cursor: pointer;
-}
+@media (max-width: 480px) {
+  .navbar-top {
+    padding: 10px;
+  }
 
-.personal-button:hover {
-  background-color: #0056b3; /* Darker blue on hover */
+  .navbar-name {
+    font-size: 1.5em;
+  }
+
+  .menu-icon {
+    font-size: 1.5em;
+  }
+
+  .navbar-info h1 {
+    font-size: 1.2rem;
+  }
+
+  .navbar-info b {
+    font-size: 1.5rem;
+  }
+
+  .navbar-info p {
+    font-size: 14px;
+    padding: 5px;
+  }
+
+  .navbar-info button {
+    font-size: 14px;
+    padding: 8px 20px;
+  }
+
+  .navbar-links-mobile a {
+    padding: 10px;
+    font-size: 14px;
+    margin: 5px 0;
+  }
 }
