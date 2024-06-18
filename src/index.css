@@ -6,13 +6,13 @@ body {
   background-color: #7c83ff;
   /* display: flex;
   place-items: center; */
-  /* min-width: 0px;
-  min-height: 100vh; */
+  min-width: 320px;
+  min-height: 100vh;
 }
 
 #root {
   max-width: 1280px;
-  min-width: 0px;
+  min-width: 200px;
   background-color:#032131;
   margin: 0 auto;
   padding: 0rem;
