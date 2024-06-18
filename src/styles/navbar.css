@@ -1,11 +1,10 @@
 /* Styles for both desktop and mobile view */
 .navbar {
-  background-color:#032131;
+  background-color: #032131;
   color: #fff;
-  padding-top: 10px;
+  padding: 10px 0;
   font-family: Arial, sans-serif;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  padding-bottom: 20px;
 }
 
 /* Base styles for the navbar */
@@ -65,23 +64,6 @@
   display: none; /* Hide the menu icon for desktop view */
 }
 
-@media (max-width: 768px) {
-  .menu-icon {
-    display: block;
-    color: #fff;
-    font-size: 2em;
-    margin-right: 20px;
-  }
-
-  .navbar-links {
-    display: none; /* Hide the links on mobile */
-  }
-
-  .navbar-top {
-    justify-content: space-between;
-  }
-}
-
 .navbar-bottom {
   margin-top: 20px;
   display: flex;
@@ -94,22 +76,18 @@
   flex: 1;
   padding-left: 30px;
   text-align: left;
-   margin-top: 0px;
-   margin-bottom: 10px;
+  margin: 0 0 10px;
 }
 
 .navbar-info h1 {
   font-size: 2.0rem;
   line-height: 1.2;
-  /* text-transform: uppercase; */
   font-weight: bold;
   color: transparent;
-
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   background: linear-gradient(to right, #ffffff, #737f98);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  
   display: inline-block;
   transition: all 0.3s ease-in-out;
 }
@@ -125,7 +103,6 @@
   white-space: nowrap;
   animation: typing 1s steps(40, end);
 }
-
 
 .navbar-info b {
   font-family: 'Times New Roman', Times, serif;
@@ -144,10 +121,6 @@
   transition: transform 0.3s ease-in-out; /* Smooth transition for hover effect */
 }
 
-
-
-
-
 .navbar-info p {
   margin-bottom: 30px;
   line-height: 1.5;
@@ -157,18 +130,16 @@
   text-align: justify; /* Ensures the text is evenly distributed */
   max-width: 600px; /* Optimal line length for reading comfort */
   padding: 10px; /* Adds space inside the borders */
-  border-left: 3px solid #009688; 
-  
+  border-left: 3px solid #009688;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Soft shadow for a subtle 3D effect */
 }
 
-
 .navbar-info button {
-  margin-bottom: 0px;
+  margin-bottom: 0;
   height: 110%;
   padding: 10px 25px;
   background-color: #3498db; /* Stylish blue background */
-  color: rgb(0, 0, 0); /* White text color */
+  color: rgb(0, 0, 0); /* Black text color */
   border: none;
   border-radius: 5px; /* Rounded corners */
   font-size: 16px;
@@ -177,6 +148,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
   transition: all 0.3s ease; /* Smooth transition for hover effects */
   cursor: pointer; /* Make the button clickable */
+  animation: highlight 2s infinite alternate; /* Apply the animation */
 }
 
 .navbar-info button:hover {
@@ -196,20 +168,13 @@
   100% { background-color: #27ae60; } /* Green */
 }
 
-
-.navbar-info button {
-  animation: highlight 2s infinite alternate; /* Apply the animation */
-}
-
-
 .navbar-image {
-  border: 2px solid rgb(255, 255, 255); 
-  border-radius: 700px;/* border style, width, and color */
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 700px; /* border style, width, and color */
   flex: 0.72;
   margin-right: 20px;
   text-align: center;
 }
-
 
 .navbar-image img {
   max-width: 80%;
@@ -218,7 +183,6 @@
 
 .navbar-socials {
   display: flex;
-   /* Equal spacing between icons */
   align-items: center;
   margin-top: 20px;
 }
@@ -250,12 +214,20 @@
   color: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); /* Instagram Gradient */
 }
 
-
-
-/* Styles for mobile view */
 @media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+    color: #fff;
+    font-size: 2em;
+    margin-right: 20px;
+  }
+
   .navbar-links {
-    display: none;
+    display: none; /* Hide the links on mobile */
+  }
+
+  .navbar-top {
+    justify-content: space-between;
   }
 
   .menu-icon {
@@ -291,18 +263,17 @@
   .navbar-info b {
     font-size: 200%;
     line-height: 40px;
-    /* Removed the word-wrap and display properties as they are not needed */
     white-space: nowrap; /* Keep job titles from wrapping */
     overflow: hidden; /* Hide overflow for long job titles */
-    /* Removed the duplicate animation property */
     animation: typing 2s steps(40, end) infinite, blink-caret .75s step-end infinite;
   }
 
   .job-title-animation {
     white-space: normal;
     overflow: visible;
-    text-overflow:ellipsis;
+    text-overflow: ellipsis;
   }
+
   @keyframes typing {
     from { width: 0; }
     to { width: 100%; }
@@ -311,28 +282,9 @@
   .navbar-info b {
     font-size: 200%;
     line-height: 40px;
-    animation:typing 2s steps(40, end) infinite, blink-caret .75s step-end infinite;
+    animation: typing 2s steps(40, end) infinite, blink-caret .75s step-end infinite;
   }
-
- 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .personal-button {
   background-color: #ccdbec; /* Blue color, you can change it */
