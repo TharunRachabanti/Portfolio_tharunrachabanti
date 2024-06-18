@@ -1,35 +1,76 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+// // App.jsx
+
+// import React, { useState } from "react";
+// import './App.css';
+// import MainContainer from "./containers/maincontainer";
+// import FirstContainer from "./containers/firstcontainer";
+// import SecondContainer from "./containers/secondcontainer";
+// import Navbar from "./containers/navbar";
+// import Projects from "./containers/projects";
+// import Aboutme from "./containers/aboutme";
+// import LastContainer from "./containers/lastcontainer";
+
+// function App() {
+
+//   return (
+//     <React.Fragment>
+//         <div id="home">
+//         <Navbar />
+//       </div>
+//       <div id="services">
+//         <FirstContainer />
+//       </div>
+//       <div id="portfolio">
+//         <Projects />
+//       </div>
+//       <div id="aboutme">
+//         <Aboutme />
+//       </div>
+//       <SecondContainer />
+//       <div id="contactme">
+//         <LastContainer/> 
+//       </div>
+       
+    
+//       <MainContainer></MainContainer>
+//     </React.Fragment>
+//   );
+// }
+
+// export default App;
+
+
+// import React from "react";
+// import './App.css';
+// import MainContainer from "./containers/maincontainer";
+
+// function App() {
+//   return (
+//     <MainContainer />
+//   );
+// }
+
+// export default App;
+
+
+
+import React from "react";
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import MainContainer from "./containers/maincontainer";
+import Personal from "./containers/personal";
+
+
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <Router>
+      <Routes>
+        <Route exact path="/" element={<MainContainer />} />
+        <Route exact path="/portfolio" element={<MainContainer />} />
+        <Route exact path="/personal" element={<Personal />} />
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;

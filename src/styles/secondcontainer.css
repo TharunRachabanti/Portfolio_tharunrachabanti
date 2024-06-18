@@ -1,0 +1,108 @@
+/* Background styling */
+.background {
+  /* background: linear-gradient(270deg, #ffffff 10%, #fdfdfd 100%); */
+  background-color:#032131;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 300px;
+  padding-top: 100px;
+  
+}
+
+/* Container for contact form and map */
+.container {
+  display: flex;
+  max-width: 100%;
+  width: 100%;
+}
+
+/* Contact container styling */
+.contact-container {
+  background-color: #032131;
+  border: 1px solid #032131; /* Added border property */
+  margin: 10px;
+  width: 50%;
+  padding: 10px;
+  border-radius: 15px;
+
+  /* Uncomment these lines if needed */
+  /* background: linear-gradient(270deg, rgba(3, 33, 49, 0.1) 10%, rgba(255, 255, 255, 0.1) 100%); */
+  /* box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25); */
+  /* transition: transform 0.4s ease, box-shadow 0.4s ease; */
+}
+
+
+/* .contact-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+} */
+
+/* Heading styling */
+.contact-container h2 {
+  text-align: center;
+  color: #ffffff;
+  margin-top: 0px;
+  margin-bottom: 40px;
+  font-size: 1.5rem;
+  font-family: 'Playfair Display', serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+/* Input group styling */
+.input-group {
+  margin-bottom: 20px;
+}
+
+/* Input and textarea styling */
+.input-field {
+  width: 90%;
+  padding: 15px;
+  border: 2px solid #eaeaea;
+  border-radius: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-field:focus {
+  border-color: #b24592;
+  box-shadow: 0 0 10px rgba(178, 69, 146, 0.3);
+}
+
+/* Button styling */
+.send-btn {
+  width: 90%;
+  padding: 15px;
+  background-color: #4571b2;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.send-btn:hover {
+  background-color: #219f77;
+  transform: scale(1.05);
+}
+
+/* Map container styling */
+.map-container {
+  background-color: #ffffff;
+  border: 0px solid #032131; /* Added border property */
+  margin: 5px;
+  width: 50%;
+  padding: 10px;
+  border-radius: 0px;
+  /* box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+  transition: transform 0.4s ease, box-shadow 0.4s ease; */
+}
+
+/* .map-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+} */

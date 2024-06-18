@@ -1,0 +1,50 @@
+.lastcontainer {
+    background-color: #032131;
+    padding: 10px;
+    color: rgb(0, 0, 0); 
+    height: 400px;/* Adding a color to make the text visible against the background */
+}
+.lastcontainer {
+    background-color: #032131;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.contact-info, .social-media, .cta {
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+p {
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+.icons {
+    display: flex;
+    gap: 20px;
+    font-size: 1.5rem;
+}
+
+.icons a {
+    color: rgb(255, 255, 255);
+    transition: color 0.3s ease;
+}
+
+.icons a:hover {
+    color: #1da1f2; /* Example color for hover effect */
+}
+
+.cta p {
+    font-size: 1.2rem;
+    font-weight: bold;
+}

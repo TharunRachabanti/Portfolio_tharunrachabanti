@@ -1,0 +1,78 @@
+.servicesContainer {
+  display:flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 0px;
+  
+ 
+  flex-wrap: wrap;
+}
+
+.serviceCard {
+  flex: 0 1 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.2);
+    
+  /* background-color: rgb(255, 255, 255); */
+  
+  backdrop-filter: blur(10px); /* Blur effect */
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  color: rgb(255, 255, 255);
+  margin: 1px;
+  text-align: center;
+  border: 2px solid rgba(255, 255, 255, 0.3); /* Optional border for better visibility */
+}
+
+
+.serviceLogoContainer {
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 0%;
+  height: 0%;
+  border-radius: 1%;
+  overflow: hidden;
+  border: 1px solid rgb(0, 0, 0);
+}
+
+.serviceLogo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.serviceContent {
+  z-index: 2;
+}
+
+.serviceTitle {
+  margin: 10px 0;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.serviceDescription {
+  font-size: 1em;
+  line-height: 1.5;
+  color: #ffffff;
+  padding: 0 20px;
+}
+
+.serviceCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+}
+
+.serviceCard:hover .serviceLogo {
+  transform: scale(1.1);
+}

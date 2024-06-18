@@ -1,0 +1,348 @@
+/* Styles for both desktop and mobile view */
+.navbar {
+  background-color:#032131;
+  color: #fff;
+  padding-top: 10px;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding-bottom: 20px;
+}
+
+/* Base styles for the navbar */
+.navbar-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+  background: linear-gradient(145deg, #1a3b52, #162e40);
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4), -5px -5px 15px rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+/* Enhance the navbar name with text-shadow for depth */
+.navbar-name {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #f0f0f0;
+  text-shadow: 2px 2px 4px #000;
+}
+
+.navbar-links a {
+  color: #ffffff;
+  font-size: smaller;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 0 20px;
+  padding: 8px 15px;
+  border: 2px solid #ffffff;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  font-weight: 600;
+  letter-spacing: 1px;
+  display: inline-block;
+}
+
+.navbar-links a:hover {
+  background-color: #ffffff;
+  color: #000000;
+  box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.3);
+  transform: translateY(-3px);
+}
+
+/* Active state for the link buttons */
+.navbar-links a:active {
+  background-color: #e0e0e0;
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2);
+  transform: translateY(2px);
+}
+
+/* Responsive design for the menu icon */
+.menu-icon {
+  display: none; /* Hide the menu icon for desktop view */
+}
+
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+    color: #fff;
+    font-size: 2em;
+    margin-right: 20px;
+  }
+
+  .navbar-links {
+    display: none; /* Hide the links on mobile */
+  }
+
+  .navbar-top {
+    justify-content: space-between;
+  }
+}
+
+.navbar-bottom {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.navbar-info {
+  flex: 1;
+  padding-left: 30px;
+  text-align: left;
+   margin-top: 0px;
+   margin-bottom: 10px;
+}
+
+.navbar-info h1 {
+  font-size: 2.0rem;
+  line-height: 1.2;
+  /* text-transform: uppercase; */
+  font-weight: bold;
+  color: transparent;
+
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(to right, #ffffff, #737f98);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+.job-title-animation {
+  overflow: hidden;
+  border-right: 2px solid orange; /* Change border color as needed */
+  white-space: nowrap;
+  animation: typing 1s steps(40, end);
+}
+
+
+.navbar-info b {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 3rem; /* Equivalent to 400% for better scalability */
+  line-height: 1.5; /* Adjust line height for better readability */
+  white-space: nowrap; /* Prevent job titles from wrapping */
+  overflow: hidden; /* Hide overflow for long job titles */
+  display: block; /* Change from inline-block to block */
+  margin-top: 0; /* Remove default top margin */
+  margin-bottom: 1rem; /* Add some space between the title and content */
+  font-weight: bold; /* Ensure boldness for emphasis */
+  background-image: linear-gradient(to right, #ff8a00, #e52e71); /* Vibrant orange color for contrast */
+  -webkit-background-clip: text; /* Apply gradient to text */
+  -webkit-text-fill-color: transparent; /* Hide original text color */
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1); /* Soft text shadow for depth */
+  transition: transform 0.3s ease-in-out; /* Smooth transition for hover effect */
+}
+
+
+
+
+
+.navbar-info p {
+  margin-bottom: 30px;
+  line-height: 1.5;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Classy and modern font */
+  color: #ffffff; /* Subtle, professional font color */
+  font-size: 16px; /* Optimal font size for readability */
+  text-align: justify; /* Ensures the text is evenly distributed */
+  max-width: 600px; /* Optimal line length for reading comfort */
+  padding: 10px; /* Adds space inside the borders */
+  border-left: 3px solid #009688; 
+  
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Soft shadow for a subtle 3D effect */
+}
+
+
+.navbar-info button {
+  margin-bottom: 0px;
+  height: 110%;
+  padding: 10px 25px;
+  background-color: #3498db; /* Stylish blue background */
+  color: rgb(0, 0, 0); /* White text color */
+  border: none;
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+  cursor: pointer; /* Make the button clickable */
+}
+
+.navbar-info button:hover {
+  background-color: #2980b9; /* Slightly darker shade on hover */
+  transform: translateY(-2px); /* Slight raise effect */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+.navbar-info button:active {
+  transform: translateY(1px); /* Depress effect when active */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Shallower shadow when pressed */
+}
+
+@keyframes highlight {
+  0% { background-color: #3498db; } /* Blue */
+  50% { background-color: #f1c40f; } /* Yellow */
+  100% { background-color: #27ae60; } /* Green */
+}
+
+
+.navbar-info button {
+  animation: highlight 2s infinite alternate; /* Apply the animation */
+}
+
+
+.navbar-image {
+  border: 2px solid rgb(255, 255, 255); 
+  border-radius: 700px;/* border style, width, and color */
+  flex: 0.72;
+  margin-right: 20px;
+  text-align: center;
+}
+
+
+.navbar-image img {
+  max-width: 80%;
+  height: 80%;
+}
+
+.navbar-socials {
+  display: flex;
+   /* Equal spacing between icons */
+  align-items: center;
+  margin-top: 20px;
+}
+
+.navbar-socials a {
+  color: #ffffff;
+  font-size: 40px;
+  margin: 0 20px;
+  transition: transform 0.3s ease, color 0.3s ease;
+  text-decoration: none; /* Removes underline from links */
+}
+
+.navbar-socials a:hover {
+  color: #ffffff;
+  transform: translateY(-5px); /* Slight raise effect on hover */
+  text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Soft shadow for depth */
+}
+
+/* Optional: Add a specific class for each social media icon for custom colors */
+.navbar-socials .icon-facebook:hover {
+  color: #3b5998; /* Facebook Blue */
+}
+
+.navbar-socials .icon-twitter:hover {
+  color: #1da1f2; /* Twitter Blue */
+}
+
+.navbar-socials .icon-instagram:hover {
+  color: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); /* Instagram Gradient */
+}
+
+
+
+/* Styles for mobile view */
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+
+  .menu-icon svg {
+    fill: #fff;
+    width: 24px;
+    height: 24px;
+  }
+
+  .navbar-links-mobile {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .navbar-info,
+  .navbar-image {
+    flex: 1;
+  }
+
+  .navbar-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navbar-info b {
+    font-size: 200%;
+    line-height: 40px;
+    /* Removed the word-wrap and display properties as they are not needed */
+    white-space: nowrap; /* Keep job titles from wrapping */
+    overflow: hidden; /* Hide overflow for long job titles */
+    /* Removed the duplicate animation property */
+    animation: typing 2s steps(40, end) infinite, blink-caret .75s step-end infinite;
+  }
+
+  .job-title-animation {
+    white-space: normal;
+    overflow: visible;
+    text-overflow:ellipsis;
+  }
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+
+  .navbar-info b {
+    font-size: 200%;
+    line-height: 40px;
+    animation:typing 2s steps(40, end) infinite, blink-caret .75s step-end infinite;
+  }
+
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.personal-button {
+  background-color: #ccdbec; /* Blue color, you can change it */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.personal-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
