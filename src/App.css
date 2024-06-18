@@ -1,19 +1,19 @@
-body {
+/* body {
   margin:0px; 
-  background-color: #7c83ff;
+  background-color: #7c83ff; */
   /* display: flex;
   place-items: center; */
-  min-width: 320px;
+  /* min-width: 320px;
   min-height: 100vh;
-}
+} */
 
-#root {
+/* #root {
   max-width: 1280px;
   background-color:#032131;
   margin: 0 auto;
   padding: 0rem;
   text-align: center;
-}
+} */
 
 
 

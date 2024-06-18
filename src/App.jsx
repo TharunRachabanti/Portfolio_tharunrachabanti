@@ -67,6 +67,10 @@ function App() {
       <Routes>
         <Route exact path="/" element={<MainContainer />} />
         <Route exact path="/portfolio" element={<MainContainer />} />
+        <Route exact path="/home" element={<MainContainer />} />
+        <Route exact path="/aboutme" element={<MainContainer />} />
+        <Route exact path="/services" element={<MainContainer />} />
+        <Route exact path="/contactme" element={<MainContainer />} />
         <Route exact path="/personal" element={<Personal />} />
       </Routes>
     </Router>
