@@ -52,6 +52,7 @@ const LastContainer = () => {
         <h2>Contact Me</h2>
         <p>Email: tharunrachabanti@gmail.com</p>
         <p>Phone: +91 9347644178</p>
+        <p>https://www.linkedin.com/in/tharunrachabanti/</p>
       </div>
       <div className='social-media'>
         <h2>Follow Me</h2>

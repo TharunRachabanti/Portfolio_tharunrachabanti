@@ -3,13 +3,16 @@
   /* background: linear-gradient(135deg, #e6e9f0 25%, #eef1f5 25%, #eef1f5 50%, #e6e9f0 50%, #e6e9f0 75%, #eef1f5 75%, #eef1f5);  */
   background-color:#032131;
     color: #000000;
-    padding: 20px;
-    height: 1250px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 1400px;
   }
   
 
 .first-container img {
   margin-top: -50px;
+  margin-bottom: 10px;
   max-width: 100%; /* Ensures the image doesn't exceed its container's width */
   height: auto; /* Maintains aspect ratio */
 }

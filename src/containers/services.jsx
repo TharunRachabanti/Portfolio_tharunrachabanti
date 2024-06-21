@@ -3,33 +3,33 @@ import '../styles/services.css';
 
 const servicesList = [
   {
-    title: 'APP DEVELOPMENT',
-    description: 'With over 5+ years of job experience. I studied Information Technology at',
+    title: 'UI/UX Design',
+    description: 'Creating intuitive and engaging user interfaces and experiences through detailed research, prototyping, and usability testing.',
     logo: 'https://cdn.pixabay.com/photo/2022/01/09/09/33/charminar-6925617_640.jpg',
   },
   {
-    title: 'WEB DEVELOPMENT',
-    description: 'With over 5+ years of job experience. I studied Information Technology at',
+    title: 'Front-End Development',
+    description: 'Building responsive and dynamic web and mobile interfaces using modern web technologies and frameworks.',
     logo: 'https://cdn.pixabay.com/photo/2022/01/09/09/33/charminar-6925617_640.jpg',
   },
   {
     title: 'WEB DESIGN',
-    description: 'With over 5+ years of job experience. I studied Information Technology at',
+    description: 'Creating visually appealing and functional website layouts that prioritize user experience and accessibility',
     logo: '/assets/dispersionmine4.png',
   },
   {
-    title: 'APP DEVELOPMENT',
-    description: 'With over 5+ years of job experience. I studied Information Technology at',
+    title: 'Full-Stack Development',
+    description: 'Developing robust backend systems and seamless integrations with front-end applications.',
     logo: 'https://cdn.pixabay.com/photo/2022/01/09/09/33/charminar-6925617_640.jpg',
   },
   {
-    title: 'WEB DEVELOPMENT',
-    description: 'With over 5+ years of job experience. I studied Information Technology at',
+    title: 'App Development',
+    description: 'Crafting high-performance mobile applications with a focus on user experience and cross-platform compatibility.',
     logo: 'https://cdn.pixabay.com/photo/2022/01/09/09/33/charminar-6925617_640.jpg',
   },
   {
-    title: 'WEB DESIGN',
-    description: 'With over 5+ years of job experience. I studied Information Technology at',
+    title: 'Web Development',
+    description: 'Designing and developing scalable and responsive websites to deliver optimal user experiences across devices.',
     logo: '/assets/dispersionmine4.png',
   },
   

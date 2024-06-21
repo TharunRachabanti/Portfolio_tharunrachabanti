@@ -1,7 +1,8 @@
 .servicesContainer {
   display:flex;
   justify-content: center;
-  gap: 30px;
+  row-gap: 50px;
+  column-gap: 30px;
   padding: 0px;
   
  
@@ -9,6 +10,7 @@
 }
 
 .serviceCard {
+
   flex: 0 1 300px;
   display: flex;
   flex-direction: column;
@@ -25,7 +27,10 @@
   position: relative;
   overflow: hidden;
   color: rgb(255, 255, 255);
-  margin: 1px;
+  margin-top: 50px;
+  margin-left: 20px;
+  margin-right: 20PX;
+  /* margin: 20px; */
   text-align: center;
   border: 2px solid rgba(255, 255, 255, 0.3); /* Optional border for better visibility */
 }
@@ -62,7 +67,7 @@
 }
 
 .serviceDescription {
-  font-size: 1em;
+  font-size: 0.8em;
   line-height: 1.5;
   color: #ffffff;
   padding: 0 20px;

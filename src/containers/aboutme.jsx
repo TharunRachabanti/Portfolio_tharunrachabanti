@@ -20,10 +20,9 @@ const Aboutme = () => {
           </div>
           <div className="card-content">
             <h1 className="name">Tharun Rachabanti</h1>
-            <p className="title">Full Stack Dveloper & Author</p>
+            <p className="title">Full Stack Developer</p>
             <p className="description">
-            I'm a recent B.E. Computer Science graduate from Sathyabama University, now based in Hyderabad and aspiring to be a Software Engineer. My skills include Java, Python, C, Dart, data structures, algorithms, HTML5, CSS3, JavaScript, ReactJS, Node.js, Express.js, Firebase, MongoDB, and Oracle.
-            I have hands-on experience with technologies like Flutter, Node.js, MongoDB,Firebase, integrating advanced concepts like AR, deep learning, and machine learning.
+            I'm a recent B.E. Computer Science graduate from Sathyabama University, now based in Hyderabad and aspiring to be a Software Engineer. My skills include Java, Python, C, Dart, data structures, algorithms, HTML5, CSS3, JavaScript, ReactJS, Node.js, Express.js, Firebase, MongoDB, and Oracle. I have hands-on experience with technologies like Flutter, Node.js, MongoDB,Firebase, integrating advanced concepts like AR, deep learning, and machine learning.
 
 
             </p>

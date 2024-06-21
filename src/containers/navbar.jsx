@@ -12,6 +12,7 @@ const Navbar = () => {
     'Application Developer',
     'Front-End Developer',
     'Backend Development',
+    'UI/UX Designer',
   ];
 
   useEffect(() => {
@@ -62,7 +63,8 @@ const Navbar = () => {
         <div className="navbar-info">
           <h1>I'm Tharun Rachabanti</h1>
           <b key={jobIndex} className="job-title-animation">{jobs[jobIndex]}</b>
-          <p>Passionate and innovative Software Developer with real-time experience in full-stack web and mobile app development. Proficient in Java, Python, Dart, and various development frameworks. Adept at designing and implementing robust, scalable solutions. Strong problem-solving skills and a quick learner.</p>
+          <p>Passionate and innovative Software Developer with real-time experience in full-stack web and mobile app development. Proficient in Java, Python, Dart, and various development frameworks. Adept at designing and implementing robust, scalable solutions. Strong problem-solving skills and a quick learner.
+          </p>
           <button>Hire Me</button>
         </div>
         <div className="navbar-image">
