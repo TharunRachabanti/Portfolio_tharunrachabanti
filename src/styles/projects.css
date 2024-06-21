@@ -107,8 +107,8 @@ button {
 } */
 
 
+/* Container for the projects */
 .projects-container {
-  /* background: linear-gradient(to right,#000000,#000000); */
   background-color: #032131;
   padding: 5% 10%;
 }
@@ -117,21 +117,22 @@ button {
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
+  flex-wrap: wrap; /* Ensure buttons wrap on smaller screens */
 }
 
 .portfolio-heading {
   text-transform: uppercase;
-  font-size: 60px;
+  font-size: 4vw; /* Responsive font size */
   color: #ffffff;
-
   background: linear-gradient(to right, #ff416c, #ff4b2b);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add letter spacing for a stylish look */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  text-align: center; /* Center align for better responsiveness */
 }
 
 button {
-  margin: 0 15px;
+  margin: 10px 15px; /* Added margin for better spacing */
   padding: 10px 20px;
   border: 2px solid #0056b3;
   background-color: transparent;
@@ -144,16 +145,15 @@ button {
 
 button.active,
 button:hover {
-  /* background-color: #2098d9; */
   background: linear-gradient(to right, #ff416c, #ff4b2b);
   color: #fff;
 }
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 50px;
-  transition: transform 0.3s ease; /* Added transition for grid layout change */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjusted min width for better responsiveness */
+  gap: 30px; /* Reduced gap for better spacing on smaller screens */
+  transition: transform 0.3s ease;
 }
 
 .project-card {
@@ -171,7 +171,7 @@ button:hover {
 
 .project-background {
   width: 100%;
-  height: 300px;
+  height: 200px; /* Adjusted height for better responsiveness */
   background-size: cover;
   background-position: center;
 }
@@ -186,13 +186,13 @@ button:hover {
   padding: 15px;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
-  transform: translateY(0); /* Keep it in place */
+  transform: translateY(0);
   transition: transform 0.3s ease;
 }
 
 .project-info h3 {
   margin: 0;
-  font-size: 20px;
+  font-size: 18px; /* Adjusted font size for better responsiveness */
 }
 
 .project-info button {
@@ -205,28 +205,27 @@ button:hover {
   font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  transition: all 0.3s ease; /* Smooth transition for hover effects */
-  cursor: pointer; /* Make the button clickable */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .project-info button:hover {
   background-color: #0887b9;
 }
 
-/* Stylish blue background */
 button {
   margin-bottom: 20px;
-  height: 110%;
+  height: auto; /* Adjusted height for better responsiveness */
   padding: 10px 25px;
   background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0); /* Black text color */
+  color: rgb(0, 0, 0);
   border: 1px solid #032131;
-  border-radius: 5px; /* Rounded corners */
+  border-radius: 5px;
   font-size: 16px;
   font-weight: bold;
   text-transform: uppercase;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  transition: all 0.3s ease; /* Smooth transition for hover effects */
-  cursor: pointer; /* Make the button clickable */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
 }

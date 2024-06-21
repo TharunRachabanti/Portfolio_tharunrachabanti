@@ -1,40 +1,30 @@
 .servicesContainer {
-  display:flex;
+  display: flex;
   justify-content: center;
   row-gap: 50px;
   column-gap: 30px;
-  padding: 0px;
-  
- 
+  padding: 0;
   flex-wrap: wrap;
 }
 
 .serviceCard {
-
   flex: 0 1 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 20px;
   background: rgba(255, 255, 255, 0.2);
-    
-  /* background-color: rgb(255, 255, 255); */
-  
-  backdrop-filter: blur(10px); /* Blur effect */
+  backdrop-filter: blur(10px);
   border-radius: 20px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   position: relative;
   overflow: hidden;
   color: rgb(255, 255, 255);
-  margin-top: 50px;
-  margin-left: 20px;
-  margin-right: 20PX;
-  /* margin: 20px; */
+  margin: 50px 20px 0;
   text-align: center;
-  border: 2px solid rgba(255, 255, 255, 0.3); /* Optional border for better visibility */
+  border: 2px solid rgba(255, 255, 255, 0.3);
 }
-
 
 .serviceLogoContainer {
   z-index: 2;
@@ -42,9 +32,9 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 20px;
-  width: 0%;
-  height: 0%;
-  border-radius: 1%;
+  width: 100px; /* Adjusted for better responsiveness */
+  height: 100px; /* Adjusted for better responsiveness */
+  border-radius: 50%; /* Circular logo container */
   overflow: hidden;
   border: 1px solid rgb(0, 0, 0);
 }
@@ -67,7 +57,7 @@
 }
 
 .serviceDescription {
-  font-size: 0.8em;
+  font-size: 0.9em; /* Slightly increased for better readability */
   line-height: 1.5;
   color: #ffffff;
   padding: 0 20px;

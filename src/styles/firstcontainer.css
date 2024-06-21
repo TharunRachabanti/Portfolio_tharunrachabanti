@@ -1,14 +1,9 @@
-
 .first-container {
-  /* background: linear-gradient(135deg, #e6e9f0 25%, #eef1f5 25%, #eef1f5 50%, #e6e9f0 50%, #e6e9f0 75%, #eef1f5 75%, #eef1f5);  */
-  background-color:#032131;
-    color: #000000;
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    height: 1400px;
-  }
-  
+  background-color: #032131;
+  color: #000000;
+  padding: 20px;
+  min-height: 100vh; /* Adjusted for better responsiveness */
+}
 
 .first-container img {
   margin-top: -50px;
@@ -18,15 +13,12 @@
 }
 
 .heading-3d {
-  /* Example 3D text styling */
   text-align: center; /* Center align text */
   text-transform: uppercase;
-  font-size: 60px;
+  font-size: 8vw; /* Responsive font size */
   color: #ffffff;
   background: linear-gradient(to right, #ff416c, #ff4b2b);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
-
-
