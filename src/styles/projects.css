@@ -122,7 +122,7 @@ button {
 
 .portfolio-heading {
   text-transform: uppercase;
-  font-size: 4vw; /* Responsive font size */
+  font-size: 10vw; /* Responsive font size */
   color: #ffffff;
   background: linear-gradient(to right, #ff416c, #ff4b2b);
   -webkit-background-clip: text;

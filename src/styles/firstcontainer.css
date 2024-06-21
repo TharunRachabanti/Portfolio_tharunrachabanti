@@ -8,14 +8,15 @@
 .first-container img {
   margin-top: -50px;
   margin-bottom: 10px;
-  max-width: 100%; /* Ensures the image doesn't exceed its container's width */
+  max-width: 100%;
+  min-height: 300px; /* Ensures the image doesn't exceed its container's width */
   height: auto; /* Maintains aspect ratio */
 }
 
 .heading-3d {
   text-align: center; /* Center align text */
   text-transform: uppercase;
-  font-size: 8vw; /* Responsive font size */
+  font-size: 10vw; /* Responsive font size */
   color: #ffffff;
   background: linear-gradient(to right, #ff416c, #ff4b2b);
   -webkit-background-clip: text;

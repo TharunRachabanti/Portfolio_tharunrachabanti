@@ -5,12 +5,12 @@ const servicesList = [
   {
     title: 'UI/UX Design',
     description: 'Creating intuitive and engaging user interfaces and experiences through detailed research, prototyping, and usability testing.',
-    logo: 'https://cdn.pixabay.com/photo/2022/01/09/09/33/charminar-6925617_640.jpg',
+    logo: '/assets/ui.png',
   },
   {
     title: 'Front-End Development',
     description: 'Building responsive and dynamic web and mobile interfaces using modern web technologies and frameworks.',
-    logo: 'https://cdn.pixabay.com/photo/2022/01/09/09/33/charminar-6925617_640.jpg',
+    logo: '/assets/fe.png',
   },
   {
     title: 'WEB DESIGN',
@@ -40,9 +40,9 @@ const Services = () => {
     <div className="servicesContainer">
       {servicesList.map((service, index) => (
         <div key={index} className="serviceCard">
-          <div className="serviceLogoContainer">
+          {/* <div className="serviceLogoContainer">
             <img src={service.logo} alt={`${service.title} logo`} className="serviceLogo" />
-          </div>
+          </div> */}
           <div className="serviceContent">
             <h3 className="serviceTitle">{service.title}</h3>
             <p className="serviceDescription">{service.description}</p>
